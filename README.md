@@ -29,20 +29,22 @@ spring.servlet.multipart.max-request-size=20MB
 ### Upload de Arquivos:
 Envie arquivos para o servidor utilizando o método HTTP POST:
 
-POST http://localhost:8080/api/files/upload
-Certifique-se de incluir o arquivo desejado no corpo da requisição, utilizando a chave arquivo e o caminho do arquivo como valor.
+- POST http://localhost:8080/api/files/upload
+- Certifique-se de incluir o arquivo desejado no corpo da requisição, utilizando a chave arquivo e o caminho do arquivo como valor.
 
 
 ### Download de Arquivos:
 Baixe arquivos do servidor utilizando o método HTTP GET:
 
-GET http://localhost:8080/api/files/download/{nome-arquivo.tipo}
-Substitua {nome-arquivo.tipo} pelo nome do arquivo e seu tipo (exemplo: documento.pdf). Utilize o link gerado durante o upload.
+- GET http://localhost:8080/api/files/download/{nome-arquivo.tipo}
+- Substitua {nome-arquivo.tipo} pelo nome do arquivo e seu tipo (exemplo: documento.pdf). Utilize o link gerado durante o upload.
 
 
 ### Listagem de Arquivos:
 Obtenha uma lista de arquivos armazenados no servidor utilizando o método HTTP GET:
 
-GET http://localhost:8080/api/files/lista
-Licença
+- GET http://localhost:8080/api/files/lista
+
+
+## Licença
 Este projeto está licenciado sob a MIT License.
